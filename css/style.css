@@ -19,6 +19,7 @@ body {
 }
 
 
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -217,3 +218,94 @@ main {
   display: flex;
   flex-direction: column;
 }
+/* Esperienze Lavorative */
+.esperienze h1 {
+  font-size: 2rem;
+  color: #0d1117;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.esperienza {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  transition: transform 0.2s;
+}
+
+.esperienza:hover {
+  transform: translateY(-3px);
+}
+
+.esperienza h2 {
+  font-size: 1.5rem;
+  color: #0077b6;
+  margin-bottom: 0.3rem;
+}
+
+.esperienza h3 {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.esperienza p {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.esperienza .periodo {
+  font-size: 0.9rem;
+  color: #888;
+}
+.hero-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.skills-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #222;
+}
+
+.skills-category {
+  margin-bottom: 25px;
+}
+
+.skills-category h3 {
+  font-size: 1.4rem;
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+.skills-category ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #444;
+}
+
+.skills-category ul li {
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+.skills-category p {
+  font-size: 1rem;
+  color: #444;
+  margin-left: 10px;
+  line-height: 1.4;
+}
+

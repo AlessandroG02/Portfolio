@@ -7,11 +7,17 @@
 
 /* Body */
 body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: 'Segoe UI', sans-serif;
   background-color: #f8f9fa;
   color: #212529;
   line-height: 1.6;
 }
+
 
 /* Navbar */
 .navbar {
@@ -179,18 +185,6 @@ footer {
     display: block;
   }
 }
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.cv-container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
 
 .download-btn-wrapper {
   padding: 1rem;
@@ -217,4 +211,9 @@ body {
   flex: 1;
   width: 100%;
   border: none;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }

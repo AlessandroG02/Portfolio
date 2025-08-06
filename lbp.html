@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alessandro Ganzit – Registro Elettronico LBP</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="logo/logo.ico?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Alessandro Ganzit</div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="progetti.html"><i class="fas fa-tools"></i> Progetti</a></li>
+                <li><a href="cv.html"><i class="fas fa-file-alt"></i> CV</a></li>
+                <li><a href="contatti.html"><i class="fas fa-envelope"></i> Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Registro Elettronico - Learning By Projects</h1>
+        <p>Sistema di gestione presenze per corsi formativi con dashboard multi-ruolo</p>
+        <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            <span
+                style="background-color: rgba(255, 255, 255, 0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fab fa-java"></i> Java
+            </span>
+            <span
+                style="background-color: rgba(255, 255, 255, 0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fas fa-leaf"></i> Spring Boot
+            </span>
+            <span
+                style="background-color: rgba(255, 255, 255, 0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fab fa-angular"></i> Angular
+            </span>
+            <span
+                style="background-color: rgba(255, 255, 255, 0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fas fa-code"></i> TypeScript
+            </span>
+            <span
+                style="background-color: rgba(255, 255, 255, 0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fas fa-database"></i> H2 Database
+            </span>
+            <span
+                style="background-color: rgba(255, 255, 255, 0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fas fa-tools"></i> Maven
+            </span>
+        </div>
+    </div>
+
+    <section>
+        <h2>Descrizione del Progetto</h2>
+        <p>
+            Ho sviluppato un sistema completo di registro elettronico per la gestione delle presenze nei corsi formativi
+            "Learning By Projects". L'applicazione permette di tracciare la partecipazione degli studenti, gestire
+            approvazioni e monitorare l'andamento dei corsi attraverso un sistema multi-ruolo.
+        </p>
+        <p>
+            Il progetto è stato realizzato con un'architettura moderna utilizzando Spring Boot per il backend e Angular
+            per il frontend, garantendo scalabilità, sicurezza e un'esperienza utente ottimale. Il sistema gestisce
+            tre tipologie di utenti con permessi differenziati e workflow di approvazione strutturati.
+        </p>
+
+        <h3>Funzionalità Principali</h3>
+        <ul>
+            <li><i class="fas fa-users-cog"></i> Sistema multi-ruolo (Tutor, Tutorati, Admin)</li>
+            <li><i class="fas fa-calendar-check"></i> Gestione presenze e approvazioni</li>
+            <li><i class="fas fa-shield-alt"></i> Autenticazione sicura con Spring Security</li>
+            <li><i class="fas fa-envelope"></i> Sistema di notifiche email automatiche</li>
+            <li><i class="fas fa-chart-bar"></i> Dashboard personalizzate per ogni ruolo</li>
+            <li><i class="fas fa-api"></i> API REST per comunicazione frontend-backend</li>
+            <li><i class="fas fa-database"></i> Database H2 per sviluppo e testing rapido</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Screenshots del Progetto</h2>
+        <div class="project">
+            <img src="imgLearning/Learning.png" alt="Pagina di Login"
+                style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+            <h3>Sistema di Autenticazione</h3>
+            <p>
+                Pagina di login sicura implementata con Spring Security. Design moderno con
+                form centralizzato in ambiente aziendale professionale. Il sistema gestisce
+                l'autenticazione e l'autorizzazione per i tre ruoli differenti, garantendo
+                accesso sicuro alle funzionalità specifiche per ogni tipologia di utente.
+            </p>
+        </div>
+        <div class="project">
+            <img src="imgLearning/learning3.png" alt="Dashboard Amministratore"
+                style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+            <h3>Dashboard Amministratore</h3>
+            <p>
+                Pannello di controllo principale per gli amministratori del sistema. Mostra le sezioni
+                "Le Mie Presenze" per visualizzare e gestire tutte le presenze del sistema.
+                L'interfaccia pulita e moderna permette una navigazione intuitiva tra le diverse
+                funzionalità amministrative.
+            </p>
+        </div>
+
+        <div class="project">
+            <img src="imgLearning/learning1.png" alt="Dashboard Tutor"
+                style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+            <h3>Dashboard Tutor</h3>
+            <p>
+                Interfaccia dedicata ai tutor che permette di gestire i propri studenti (Tutorati),
+                visualizzare le presenze e gestire le approvazioni. Include sezioni per "Recruits"
+                (gestione nuovi studenti), "Tutors" (colleghi) e "Approvazioni" con indicatori
+                di presenze in attesa di conferma.
+            </p>
+        </div>
+
+
+
+        <div class="project">
+            <img src="imgLearning/learning2.png" alt="Dashboard Tutorati"
+                style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+            <h3>Dashboard Studenti (Tutorati)</h3>
+            <p>
+                Interfaccia semplificata per gli studenti che permette di visualizzare
+                "I miei recruits" (le proprie presenze registrate) e le "Approvazioni"
+                ricevute. Design user-friendly che facilita la consultazione del proprio
+                percorso formativo e dello stato delle presenze.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Architettura e Tecnologie</h2>
+        <p>
+            <strong>Backend:</strong> Java con Spring Boot per la logica di business, Spring Security per
+            l'autenticazione e autorizzazione, JDBC per l'accesso ai dati e Maven per la gestione delle dipendenze.
+            API REST per l'esposizione dei servizi e integrazione email per le notifiche automatiche.
+        </p>
+        <p>
+            <strong>Frontend:</strong> Angular con TypeScript per un'interfaccia utente moderna e reattiva.
+            Componenti modulari e servizi per la comunicazione con le API backend, garantendo un'architettura
+            scalabile e manutenibile.
+        </p>
+        <p>
+            <strong>Database:</strong> H2 Database per ambiente di sviluppo, permettendo test rapidi e
+            deployment semplificato. Schema normalizzato per gestire utenti, ruoli, presenze e approvazioni
+            con relazioni ben strutturate.
+        </p>
+    </section>
+
+    <footer>
+        <p> 2025 Alessandro Ganzit. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

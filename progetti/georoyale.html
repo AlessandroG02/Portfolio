@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alessandro Ganzit – Georoyale</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="../logo/logo.ico?v=3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">Alessandro Ganzit</a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../progetti.html"><i class="fas fa-tools"></i> Progetti</a></li>
+                <li><a href="../cv.html"><i class="fas fa-file-alt"></i> CV</a></li>
+                <li><a href="../contatti.html"><i class="fas fa-envelope"></i> Contatti</a></li>
+                <li><a href="../esperienze.html"><i class="fas fa-briefcase"></i> Esperienze lavorative</a></li>
+                <li><a href="../formazione.html"><i class="fas fa-graduation-cap"></i> Formazione Scolastica</a></li>
+                <li><a href="../competenze.html"><i class="fas fa-cogs"></i> Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Georoyale</h1>
+        <p>Videogioco multiplayer competitivo basato su conoscenze geografiche e velocità di risposta</p>
+        <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            <span style="background-color: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fab fa-java"></i> Java
+            </span>
+            <span style="background-color: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fas fa-network-wired"></i> Socket TCP
+            </span>
+            <span style="background-color: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fas fa-database"></i> MySQL
+            </span>
+            <span style="background-color: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fas fa-map-marked-alt"></i> API Geografiche
+            </span>
+        </div>
+    </div>
+
+   <section>
+    <h2>Descrizione del Progetto</h2>
+    <p><strong>Geo Royale</strong> è un'applicazione web per quiz geografici sviluppata con <strong>Spring Boot 3.5</strong> e <strong>Java 17</strong>.</p>
+
+    <h3>Funzionalità Principali</h3>
+    <ul>
+        <li>5 tipologie di quiz: Capitali, Nazioni, Bandiere, Continenti, Higher or Lower (popolazione)</li>
+        <li>Due modalità: Allenamento gratuito e Quiz autenticati con punteggi</li>
+        <li>Sessioni di 10 domande con scoring progressivo</li>
+        <li>Profilo utente con statistiche, livelli, cronologia e record personali</li>
+    </ul>
+
+    <h3>Architettura</h3>
+    <ul>
+        <li><strong>Backend:</strong> Spring Boot con Spring Security, JPA/Hibernate, database H2</li>
+        <li><strong>Frontend:</strong> Thymeleaf con CSS responsive e design moderno</li>
+    </ul>
+
+    <h3>Caratteristiche</h3>
+    <ul>
+        <li>168 paesi con dati reali (popolazione, capitali, regioni)</li>
+        <li>Sistema punteggi persistente con tracking di accuratezza e streak</li>
+        <li>Interfaccia responsive con stile gaming e gradients verdi</li>
+        <li>Ruoli differenziati: utenti anonimi per allenamento, autenticati per competizione</li>
+    </ul>
+</section>
+
+
+
+   <section>
+    <h2>Screenshots del Progetto</h2>
+
+    <div class="project">
+        <img src="../imgGeoroyale/accedi.jpg" alt="Schermata di accesso" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+        <h3>Schermata di Accesso</h3>
+        <p>
+            Interfaccia per effettuare il login con le proprie credenziali prima di accedere alle modalità di gioco.
+        </p>
+    </div>
+
+    <div class="project">
+        <img src="../imgGeoroyale/registrazione.jpg" alt="Registrazione nuovo utente" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+        <h3>Registrazione Nuovo Utente</h3>
+        <p>
+            Modulo per creare un nuovo account inserendo nome utente, email e password.
+        </p>
+    </div>
+
+    <div class="project">
+        <img src="../imgGeoroyale/georoyale.jpg" alt="Lobby multiplayer" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+        <h3>Pagina iniziale</h3>
+        <p>
+            Schermata principale del gioco con opzioni per accedere alle diverse modalità di gioco e visualizzare le statistiche.
+            Include pulsanti per iniziare una nuova partita, visualizzare il profilo e accedere alla classifica globale.
+        </p>
+    </div>
+
+    <div class="project">
+        <img src="../imgGeoroyale/georoyaleAllenamento.jpg" alt="Modalità allenamento" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+        <h3>Modalità Allenamento</h3>
+        <p>
+            Sessione di gioco in singolo per esercitarsi e migliorare le proprie abilità geografiche.
+        </p>
+    </div>
+
+    <div class="project">
+        <img src="../imgGeoroyale/guessthecap.jpg" alt="Modalità Guess the Capital" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+        <h3>Modalità "Guess the Capital"</h3>
+        <p>
+            Il giocatore deve indovinare la capitale corretta tra le opzioni disponibili nel minor tempo possibile.
+        </p>
+    </div>
+
+    <div class="project">
+        <img src="../imgGeoroyale/hor.jpg" alt="Modalità Head or Random" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+        <h3>Modalità "Higher or Lower"</h3>
+        <p>
+            Sfida a tempo in cui bisogna identificare rapidamente località geografiche casuali sulla mappa.
+        </p>
+    </div>
+
+    <div class="project">
+        <img src="../imgGeoroyale/iltuoprofilo.jpg" alt="Profilo utente" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+        <h3>Profilo Utente</h3>
+        <p>
+            Pagina personale con statistiche di gioco, punteggi raggiunti e impostazioni del profilo.
+        </p>
+    </div>
+
+    <div class="project">
+        <img src="../imgGeoroyale/quiz.jpg" alt="Modalità quiz" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" />
+        <h3>Modalità Quiz</h3>
+        <p>
+            Rispondi a domande geografiche a scelta multipla per accumulare punti e scalare la classifica.
+        </p>
+    </div>
+</section>
+
+  <section>
+    <h2>Tecnologie Utilizzate</h2>
+    <ul>
+        <li><strong>Frontend:</strong> Thymeleaf templates con CSS responsive e design moderno.</li>
+        <li><strong>Backend:</strong> Spring Boot 3.5 con Spring Security, JPA/Hibernate per la gestione dati e sicurezza.</li>
+        <li><strong>Database:</strong> Database in-memory H2 per sviluppo e test, con possibilità di switch a database relazionali.</li>
+        <li><strong>Sicurezza:</strong> Autenticazione completa, password criptate e protezione degli endpoint.</li>
+        <li><strong>Altro:</strong> Design responsive con interfaccia gaming-style e gestione sessioni di quiz.</li>
+    </ul>
+</section>
+
+
+
+    <section class="download-btn-wrapper">
+        <a href="https://github.com/tuo-username/Georoyale" target="_blank" class="download-btn">
+            <i class="fab fa-github"></i> Vedi Codice
+        </a>
+    </section>
+    <footer>
+        <p>© 2025 Alessandro Ganzit. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

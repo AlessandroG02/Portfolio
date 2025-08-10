@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alessandro Ganzit – Registro Elettronico</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="../logo/logo.ico?v=3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="../index.html" class="logo">
+                    <img src="../logo/logo.ico" alt="Alessandro Ganzit Logo">
+                </a>
+            </div>
+            <div class="navbar-right">
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../progetti.html"><i class="fas fa-tools"></i> Progetti</a></li>
+                    <li><a href="../cv.html"><i class="fas fa-file-alt"></i> CV</a></li>
+                    <li><a href="../contatti.html"><i class="fas fa-envelope"></i> Contatti</a></li>
+                    <li><a href="../esperienze.html"><i class="fas fa-briefcase"></i> Esperienze lavorative</a></li>
+                    <li><a href="../formazione.html"><i class="fas fa-graduation-cap"></i> Formazione Scolastica</a>
+                    </li>
+                    <li><a href="../competenze.html"><i class="fas fa-cogs"></i> Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Registro Elettronico</h1>
+        <p>Sistema gestionale completo per la gestione di tutor e tutorati con dashboard avanzata e tracking presenze</p>
+        <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+            <span
+                style="background-color: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fas fa-leaf"></i> Spring Boot
+            </span>
+            <span
+                style="background-color: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fas fa-database"></i> Hibernate
+            </span>
+            <span
+                style="background-color: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fas fa-code"></i> Lombok
+            </span>
+            <span
+                style="background-color: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fab fa-html5"></i> HTML5
+            </span>
+            <span
+                style="background-color: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fab fa-css3-alt"></i> CSS3
+            </span>
+            <span
+                style="background-color: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fab fa-js-square"></i> JavaScript
+            </span>
+            <span
+                style="background-color: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; color: white; font-weight: bold; font-size: 0.9rem;">
+                <i class="fas fa-server"></i> H2 Database
+            </span>
+        </div>
+    </div>
+
+    <section>
+        <h2>Descrizione del Progetto</h2>
+        <p><strong>Registro Elettronico</strong> è un sistema gestionale completo sviluppato per la gestione efficiente di tutor e tutorati, con funzionalità avanzate di tracking delle presenze e dashboard di controllo.</p>
+
+        <h3>Funzionalità Principali</h3>
+        <ul>
+            <li><strong>Dashboard Completa:</strong> Panoramica con statistiche tutor attivi, tutorati registrati, presenze totali e presenze da confermare</li>
+            <li><strong>Gestione Tutor:</strong> Sistema completo per registrazione, modifica ed eliminazione dei tutor con dati anagrafici completi</li>
+            <li><strong>Gestione Tutorati:</strong> Registrazione e gestione degli studenti tutorati con assegnazione ai tutor</li>
+            <li><strong>Sistema Presenze:</strong> Tracking automatico delle presenze con stati (Presente, Assente Giustificato, Assente Non Giustificato)</li>
+            <li><strong>Conferma Presenze:</strong> Sistema di validazione delle presenze con possibilità di conferma o modifica</li>
+            <li><strong>Storico Completo:</strong> Mantenimento dello storico di tutte le attività e presenze registrate</li>
+        </ul>
+
+        <h3>Caratteristiche Tecniche</h3>
+        <ul>
+            <li><strong>Architettura MVC:</strong> Sviluppato con Spring Boot seguendo il pattern Model-View-Controller</li>
+            <li><strong>ORM Avanzato:</strong> Utilizzo di Hibernate per la gestione del database e delle relazioni</li>
+            <li><strong>Code Clean:</strong> Implementazione di Lombok per ridurre il boilerplate code</li>
+            <li><strong>Database Embedded:</strong> H2 Database per sviluppo rapido e testing</li>
+            <li><strong>Interface Responsive:</strong> Design ottimizzato per tutti i dispositivi</li>
+            <li><strong>API RESTful:</strong> Endpoints ben strutturati per tutte le operazioni CRUD</li>
+        </ul>
+
+        <h3>Obiettivi del Progetto</h3>
+        <ul>
+            <li>Digitalizzare completamente il processo di gestione tutor-tutorati</li>
+            <li>Automatizzare il tracking delle presenze riducendo errori manuali</li>
+            <li>Fornire dashboard intuitive per monitoraggio e reporting</li>
+            <li>Creare un sistema scalabile e facilmente manutenibile</li>
+            <li>Implementare un flusso di lavoro efficiente per la conferma delle presenze</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Screenshots del Progetto</h2>
+         <div class="project">
+            <img src="../imgRegistroElettronico/home.png" alt="Sistema Presenze"
+                style="width: 100%; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 4px 20px var(--shadow-light);" />
+            <h3>Home - Gestione Presenze</h3>
+            <p>
+                Sistema avanzato per il tracking delle presenze con interfaccia intuitiva. Mostra le presenze 
+                registrate con data, stato (Presente, Assente Giustificato, Assente Non Giustificato) e 
+                possibilità di conferma. Include funzionalità per aggiungere nuove presenze e modificare 
+                quelle esistenti, garantendo un controllo completo del registro.
+            </p>
+        </div>
+        <div class="project">
+            <img src="../imgRegistroElettronico/gestionetutorati.png" alt="Gestione Tutorati"
+                style="width: 100%; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 4px 20px var(--shadow-light);" />
+            <h3>Gestione Tutorati</h3>
+            <p>
+                Interfaccia completa per la gestione dei tutorati registrati nel sistema. Include la visualizzazione 
+                di tutti gli studenti con informazioni dettagliate come nome completo, email, tutor assegnato e 
+                numero di assenze non giustificate. Permette l'aggiunta di nuovi tutorati tramite form dedicato 
+                e la gestione delle relazioni tutor-studente.
+            </p>
+        </div>
+
+       
+
+        <div class="project">
+            <img src="../imgRegistroElettronico/addtutor.png" alt="Aggiunta Nuovo Tutor"
+                style="width: 100%; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 4px 20px var(--shadow-light);" />
+            <h3>Form Registrazione Tutor</h3>
+            <p>
+                Form completo per la registrazione di nuovi tutor nel sistema. Include tutti i campi necessari 
+                come nome, cognome, email, telefono e data di nascita con validazione lato client e server. 
+                Design pulito e user-friendly con controlli di input ottimizzati per una compilazione rapida 
+                e senza errori.
+            </p>
+        </div>
+
+        <div class="project">
+            <img src="../imgRegistroElettronico/dashboard.png" alt="Dashboard Sistema"
+                style="width: 100%; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 4px 20px var(--shadow-light);" />
+            <h3>Dashboard di Controllo</h3>
+            <p>
+                Dashboard principale del sistema che fornisce una panoramica completa delle attività. 
+                Mostra statistiche in tempo reale come numero di tutor attivi, tutorati registrati, 
+                presenze totali e presenze in attesa di conferma. Include sezioni dedicate per presenze 
+                da confermare con azioni rapide di validazione e modifica.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Tecnologie Utilizzate</h2>
+        <ul>
+            <li><strong>Backend:</strong> Spring Boot framework con architettura MVC, Hibernate ORM per la persistenza dei dati</li>
+            <li><strong>Database:</strong> H2 Database embedded per sviluppo e testing rapido</li>
+            <li><strong>Frontend:</strong> HTML5, CSS3 responsive e JavaScript per interazioni dinamiche</li>
+            <li><strong>Strumenti:</strong> Lombok per riduzione boilerplate code, Maven per dependency management</li>
+            <li><strong>Sicurezza:</strong> Validation e controlli di integrità dati</li>
+        </ul>
+    </section>
+
+    <section class="download-btn-wrapper">
+        <a href="https://github.com/tuo-username/registro-elettronico" target="_blank" class="download-btn">
+            <i class="fab fa-github"></i> Vedi Codice
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2025 Alessandro Ganzit. Tutti i diritti riservati.</p>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

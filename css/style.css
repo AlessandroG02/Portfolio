@@ -1,8 +1,4 @@
-/* ==============================================
-   VARIABILI CSS PROFESSIONALI
-   ============================================== */
 :root {
-  /* Palette colori moderna */
   --primary-dark: #1a1a2e;
   --primary-blue: #0f3460;
   --accent-blue: #16213e;
@@ -15,38 +11,31 @@
   --shadow-light: rgba(0, 0, 0, 0.08);
   --shadow-medium: rgba(0, 0, 0, 0.12);
   --shadow-heavy: rgba(0, 0, 0, 0.2);
-  
-  /* Tipografia */
+
   --font-primary: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-  
-  /* Spacing system */
+
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
   --space-xl: 3rem;
   --space-2xl: 4rem;
-  
-  /* Border radius */
+
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-xl: 24px;
-  
-  /* Transitions */
+
   --transition-fast: 0.2s ease-out;
   --transition-medium: 0.3s ease-out;
   --transition-slow: 0.5s ease-out;
 }
 
-/* ==============================================
-   RESET E BASE
-   ============================================== */
 *,
 *::before,
 *::after {
@@ -72,9 +61,6 @@ body {
   flex-direction: column;
 }
 
-/* ==============================================
-   NAVBAR PROFESSIONALE
-   ============================================== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -174,9 +160,6 @@ body {
   width: 70%;
 }
 
-/* ==============================================
-   HERO SECTION MODERNA
-   ============================================== */
 .hero {
   background: linear-gradient(135deg, var(--primary-blue) 0%, var(--bright-blue) 50%, var(--light-blue) 100%);
   color: var(--white);
@@ -203,8 +186,15 @@ body {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .hero-img {
@@ -254,9 +244,6 @@ body {
   z-index: 2;
 }
 
-/* ==============================================
-   SEZIONI PRINCIPALI
-   ============================================== */
 section {
   padding: var(--space-2xl) var(--space-lg);
   max-width: 1200px;
@@ -313,9 +300,6 @@ section li {
   line-height: 1.6;
 }
 
-/* ==============================================
-   PROJECT CARDS PREMIUM
-   ============================================== */
 .project {
   background: var(--white);
   padding: var(--space-xl);
@@ -402,9 +386,6 @@ section li {
   background: rgba(220, 53, 69, 0.2);
 }
 
-/* ==============================================
-   ESPERIENZE LAVORATIVE
-   ============================================== */
 .esperienze {
   background: var(--background-light);
   padding: var(--space-2xl) var(--space-lg);
@@ -468,9 +449,6 @@ section li {
   margin-top: var(--space-sm);
 }
 
-/* ==============================================
-   SKILLS SECTION MODERNA
-   ============================================== */
 .skills-section {
   max-width: 1000px;
   margin: var(--space-2xl) auto;
@@ -552,9 +530,6 @@ section li {
   margin-left: 0;
 }
 
-/* ==============================================
-   DOWNLOAD BUTTON PREMIUM
-   ============================================== */
 .download-btn-wrapper {
   padding: var(--space-xl);
   text-align: center;
@@ -605,9 +580,6 @@ section li {
   transform: translateY(0);
 }
 
-/* ==============================================
-   CONTACT SECTION
-   ============================================== */
 #contatti {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -633,9 +605,6 @@ section li {
   transform: translateY(-1px);
 }
 
-/* ==============================================
-   CV FRAME
-   ============================================== */
 .cv-frame {
   flex: 1;
   width: 100%;
@@ -653,9 +622,6 @@ main {
   flex-direction: column;
 }
 
-/* ==============================================
-   FOOTER ELEGANTE
-   ============================================== */
 footer {
   text-align: center;
   padding: var(--space-xl);
@@ -667,9 +633,6 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* ==============================================
-   HAMBURGER MENU RESPONSIVO
-   ============================================== */
 .hamburger {
   display: none;
   font-size: 1.5rem;
@@ -692,9 +655,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* ==============================================
-   MEDIA QUERIES RESPONSIVO
-   ============================================== */
 @media (max-width: 768px) {
   .navbar {
     padding: var(--space-md) var(--space-lg);
@@ -714,7 +674,7 @@ footer {
   .navbar-right {
     position: relative;
   }
-  
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -813,10 +773,8 @@ footer {
   }
 }
 
-/* ==============================================
-   SCROLL BEHAVIOR E ANIMAZIONI
-   ============================================== */
 @media (prefers-reduced-motion: no-preference) {
+
   .project,
   .esperienza,
   .skills-category {
@@ -824,15 +782,24 @@ footer {
     animation: fadeInUp 0.6s ease-out forwards;
   }
 
-  .project:nth-child(2) { animation-delay: 0.1s; }
-  .project:nth-child(3) { animation-delay: 0.2s; }
-  .project:nth-child(4) { animation-delay: 0.3s; }
+  .project:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+
+  .project:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  .project:nth-child(4) {
+    animation-delay: 0.3s;
+  }
 
   @keyframes fadeInUp {
     from {
       opacity: 0;
       transform: translateY(30px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -840,9 +807,6 @@ footer {
   }
 }
 
-/* ==============================================
-   SCROLLBAR PERSONALIZZATA
-   ============================================== */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -860,28 +824,52 @@ footer {
   background: linear-gradient(var(--primary-blue), var(--bright-blue));
 }
 
-/* ==============================================
-   FOCUS STATES ACCESSIBILITÀ
-   ============================================== */
 a:focus,
 button:focus {
   outline: 2px solid var(--bright-blue);
   outline-offset: 2px;
 }
 
-/* ==============================================
-   UTILITIES
-   ============================================== */
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
+.text-center {
+  text-align: center;
+}
 
-.mb-sm { margin-bottom: var(--space-sm); }
-.mb-md { margin-bottom: var(--space-md); }
-.mb-lg { margin-bottom: var(--space-lg); }
-.mb-xl { margin-bottom: var(--space-xl); }
+.text-left {
+  text-align: left;
+}
 
-.mt-sm { margin-top: var(--space-sm); }
-.mt-md { margin-top: var(--space-md); }
-.mt-lg { margin-top: var(--space-lg); }
-.mt-xl { margin-top: var(--space-xl); }
+.text-right {
+  text-align: right;
+}
+
+.mb-sm {
+  margin-bottom: var(--space-sm);
+}
+
+.mb-md {
+  margin-bottom: var(--space-md);
+}
+
+.mb-lg {
+  margin-bottom: var(--space-lg);
+}
+
+.mb-xl {
+  margin-bottom: var(--space-xl);
+}
+
+.mt-sm {
+  margin-top: var(--space-sm);
+}
+
+.mt-md {
+  margin-top: var(--space-md);
+}
+
+.mt-lg {
+  margin-top: var(--space-lg);
+}
+
+.mt-xl {
+  margin-top: var(--space-xl);
+}

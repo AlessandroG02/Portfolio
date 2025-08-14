@@ -608,6 +608,88 @@ section li {
   box-shadow: 0 4px 20px var(--shadow-light);
   margin: var(--space-xl) auto;
   padding: var(--space-xl);
+  max-width: 800px;
+}
+
+#contatti h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--text-dark);
+  margin-bottom: var(--space-xl);
+  text-align: center;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.02em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+#contatti h2::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--bright-blue), var(--light-blue));
+  border-radius: 2px;
+}
+
+#contatti h2 i {
+  color: var(--bright-blue);
+}
+
+.contatti-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contatti-list li {
+  background: rgba(248, 250, 252, 0.5);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--bright-blue);
+  transition: all var(--transition-medium);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  box-shadow: 0 2px 8px var(--shadow-light);
+}
+
+.contatti-list li:hover {
+  transform: translateX(4px);
+  background: rgba(14, 165, 233, 0.05);
+  box-shadow: 0 4px 15px var(--shadow-medium);
+}
+
+.contatti-list strong {
+  color: var(--text-dark);
+  font-weight: var(--font-weight-semibold);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-width: 140px;
+  flex-shrink: 0;
+}
+
+.contatti-list img {
+  width: 24px !important;
+  height: 24px;
+  vertical-align: middle;
+  border-radius: 4px;
+  transition: transform var(--transition-fast);
+  filter: brightness(1.1) contrast(1.1);
+  object-fit: contain;
+  object-position: center;
+}
+
+.contatti-list li:hover img {
+  transform: scale(1.1);
 }
 
 #contatti a {
@@ -618,13 +700,43 @@ section li {
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-sm);
   display: inline-block;
-  margin-right: var(--space-sm);
-  margin-bottom: var(--space-xs);
+  font-size: 1rem;
+  flex: 1;
 }
 
 #contatti a:hover {
-  background: rgba(59, 130, 246, 0.06);
+  background: rgba(59, 130, 246, 0.08);
   transform: translateY(-1px);
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .contatti-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .contatti-list strong {
+    min-width: auto;
+    margin-bottom: var(--space-xs);
+  }
+  
+  #contatti a {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  #contatti {
+    margin: var(--space-md);
+    padding: var(--space-lg);
+  }
+  
+  .contatti-list li {
+    padding: var(--space-md);
+  }
 }
 
 .cv-frame {
@@ -770,7 +882,7 @@ footer {
   }
 
   body.cv-page main {
-    height: calc(100vh - 70px - 50px); 
+    height: calc(100vh - 70px - 50px);
   }
 }
 
@@ -800,8 +912,9 @@ footer {
     padding: var(--space-lg) var(--space-sm);
   }
 
+ 
   body.cv-page main {
-    height: calc(100vh - 60px - 45px);
+    height: calc(100vh - 60px - 45px); 
   }
 }
 

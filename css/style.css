@@ -61,6 +61,27 @@ body {
   flex-direction: column;
 }
 
+/* Modifiche per la pagina CV con una sola scrollbar */
+body.cv-page {
+  overflow: hidden;
+  height: 100vh;
+}
+
+body.cv-page main {
+  height: calc(100vh - 80px - 60px); /* Sottrae navbar (80px) + footer (60px circa) */
+  overflow: hidden;
+}
+
+body.cv-page .cv-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: auto;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -540,7 +561,7 @@ section li {
 }
 
 .download-btn {
-    background: linear-gradient(135deg, #1e3a8a, #3b82f6); /* blu scuro -> bluette */
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
     color: var(--white);
     padding: var(--space-md) var(--space-xl);
     border-radius: var(--radius-md);
@@ -625,11 +646,11 @@ main {
 
 footer {
   text-align: center;
-  padding: var(--space-xl);
+  padding: var(--space-md);
   background: rgba(248, 250, 252, 0.9);
   color: var(--text-light);
   margin-top: auto;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: var(--font-weight-light);
   border-top: 1px solid rgba(148, 163, 184, 0.15);
   backdrop-filter: blur(10px);
@@ -747,6 +768,10 @@ footer {
     height: 75vh;
     min-height: 500px;
   }
+
+  body.cv-page main {
+    height: calc(100vh - 70px - 50px); 
+  }
 }
 
 @media (max-width: 480px) {
@@ -773,6 +798,10 @@ footer {
 
   .download-btn-wrapper {
     padding: var(--space-lg) var(--space-sm);
+  }
+
+  body.cv-page main {
+    height: calc(100vh - 60px - 45px);
   }
 }
 
@@ -929,6 +958,7 @@ button:focus {
     max-width: 100%;
   }
 }
+
 .hero-tag {
     background-color: rgba(255, 255, 255, 0.2);
     padding: 8px 16px;
@@ -946,6 +976,7 @@ button:focus {
     background-color: rgba(255, 255, 255, 0.35);
     transform: translateY(-2px);
 }
+
 .hero-tags-container {
     margin-top: 2rem;
     display: flex;
@@ -954,6 +985,39 @@ button:focus {
     flex-wrap: wrap;
 }
 
+.lightbox {
+  display: none; 
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  animation: zoomIn 0.3s ease;
+}
 
-/* aggiungere immagine che al click si apre, sui progetti mettere <indietro>, sul cv mettere solo uno scorrimento */
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.lightbox:after {
+  content: "✕";
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}

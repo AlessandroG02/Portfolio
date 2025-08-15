@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alessandro Ganzit – CV</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cv-simple.css" />
   <link rel="icon" type="image/png" href="logo/logo.ico?v=3" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -28,7 +28,26 @@
   </header>
 
   <main>
-    <iframe class="cv-frame" src="cv/curriculum_Ganzit.pdf"></iframe>
+    <div class="download-section">
+      <a href="cv/curriculum_Ganzit.pdf" class="download-btn" download>
+        <i class="fas fa-download"></i>
+        Scarica CV
+      </a>
+    </div>
+
+    <div class="cv-frame-container">
+      <iframe 
+        class="cv-frame" 
+        src="cv/curriculum_Ganzit.pdf#toolbar=1&navpanes=1&scrollbar=1&page=1&view=FitH" 
+        title="Curriculum Vitae Alessandro Ganzit">
+        <div class="fallback-content">
+          <p>Il tuo browser non supporta i PDF incorporati.</p>
+          <a href="cv/curriculum_Ganzit.pdf" class="download-btn" download>
+            <i class="fas fa-download"></i> Scarica il CV
+          </a>
+        </div>
+      </iframe>
+    </div>
   </main>
 
   <footer>
@@ -37,5 +56,4 @@
 
   <script src="js/script.js"></script>
 </body>
-
 </html>

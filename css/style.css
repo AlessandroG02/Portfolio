@@ -1134,3 +1134,66 @@ button:focus {
   color: white;
   cursor: pointer;
 }
+.cv-download-btn {
+  background: linear-gradient(135deg, var(--bright-blue), var(--light-blue));
+  color: var(--white);
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  font-size: 1rem;
+  transition: var(--transition-medium);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  box-shadow: 0 4px 15px rgba(14, 165, 233, 0.25);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-primary);
+}
+.cv-download-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: var(--space-md);
+  text-align: center;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 2px 8px var(--shadow-light);
+}
+
+.cv-download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(14, 165, 233, 0.35);
+  background: linear-gradient(135deg, var(--light-blue), var(--bright-blue));
+}
+
+.cv-download-btn i {
+  font-size: 1.1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+@media (max-width: 768px) {
+  .cv-download-btn {
+    bottom: 20px;
+    right: 20px;
+    top: auto;
+    padding: var(--space-sm) var(--space-md);
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-download-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 0.85rem;
+  }
+}
+body.cv-page main {
+    height: calc(100vh - 60px - 60px - 45px);
+  }

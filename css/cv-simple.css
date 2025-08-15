@@ -9,7 +9,7 @@
 }
 
 .download-btn {
-  background: linear-gradient(135deg, #059669, #10b981);
+  background: linear-gradient(135deg, #3b82f6);
   color: white;
   padding: var(--space-md) var(--space-xl);
   border-radius: var(--radius-md);
@@ -42,9 +42,13 @@
 }
 
 .download-btn:hover {
-  background: linear-gradient(135deg, #047857, #059669);
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.25);
+}
+
+.download-btn:active {
+  transform: translateY(3b82f6);
 }
 
 .download-btn:active {

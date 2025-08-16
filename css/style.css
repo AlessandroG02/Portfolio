@@ -1197,3 +1197,76 @@ button:focus {
 body.cv-page main {
     height: calc(100vh - 60px - 60px - 45px);
   }
+  .mobile-cv-message {
+  display: none; 
+  text-align: center;
+  padding: var(--space-xl);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-lg);
+  margin: var(--space-lg) var(--space-md);
+  box-shadow: 0 4px 20px var(--shadow-light);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.mobile-cv-message h2 {
+  color: var(--text-dark);
+  margin-bottom: var(--space-md);
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-semibold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.mobile-cv-message h2 i {
+  color: var(--bright-blue);
+  font-size: 1.2rem;
+}
+
+.mobile-cv-message p {
+  color: var(--text-light);
+  margin-bottom: var(--space-lg);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.mobile-cv-message .cv-download-btn {
+  margin-top: var(--space-sm);
+}
+
+@media (max-width: 768px) {
+  .cv-frame {
+    display: none;
+  }
+  
+  .mobile-cv-message {
+    display: block;
+  }
+  
+  body.cv-page main {
+    height: auto;
+    overflow: visible;
+  }
+  
+  body.cv-page {
+    overflow: visible;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-cv-message {
+    padding: var(--space-lg);
+    margin: var(--space-md) var(--space-sm);
+  }
+  
+  .mobile-cv-message h2 {
+    font-size: 1.2rem;
+  }
+  
+  .mobile-cv-message p {
+    font-size: 0.95rem;
+  }
+}
